@@ -138,13 +138,13 @@ public class MyActivity extends Activity implements SensorEventListener {
         gyroscope = sm.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
         magnetic = sm.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
         if (acelerometer!=null) {
-            sm.registerListener(this, acelerometer, SensorManager.SENSOR_DELAY_FASTEST);
+            sm.registerListener(this, acelerometer, SensorManager.SENSOR_DELAY_NORMAL);
         }
         if (gyroscope!=null) {
-            sm.registerListener(this, gyroscope, SensorManager.SENSOR_DELAY_FASTEST);
+            sm.registerListener(this, gyroscope, SensorManager.SENSOR_DELAY_NORMAL);
         }
         if (magnetic!=null) {
-            sm.registerListener(this, magnetic, SensorManager.SENSOR_DELAY_FASTEST);
+            sm.registerListener(this, magnetic, SensorManager.SENSOR_DELAY_NORMAL);
         }
     }
 
